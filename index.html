@@ -1,4 +1,6 @@
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -925,7 +927,6 @@
      FIX: Added missing .nav-logo element
      ════════════════════════════════ -->
 <nav>
-  <a href="#hero" class="nav-logo">Sarasvathi Nadar</a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#work">Case Studies</a></li>
@@ -937,19 +938,23 @@
   </ul>
 </nav>
 
-<!-- ════════════════════════════════
-     HERO
-     FIX: class="" was empty; <strong> was unclosed
-     ════════════════════════════════ -->
+<!-- HERO -->
+<div class="hero">
+    <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:48px; flex-wrap:wrap;">
+
+      <!-- Left copy -->
 <section id="hero">
   <div class="hero-bg-grid"></div>
   <div class="hero-orb"></div>
   <div class="hero-content">
-
-    <!-- Was: <div class=><strong>Digital Marketing Portfolio</div> -->
-    <div class="hero-eyebrow">Digital Marketing Portfolio</div>
-
-    <h1 class="hero-name">Sarasvathi<br><em>Nadar</em></h1>
+      <div style="flex-shrink:0; display:flex; flex-direction:column; align-items:center; gap:12px; padding-top:40px;">
+        <div style="width:220px; height:260px; border-radius:12px; border:1.5px solid rgba(212,168,83,0.4); overflow:hidden;">
+          <img src="https://raw.githubusercontent.com/sarasvathinadar/Product-Marketing-Portfolio/main/profile%20pic.png"
+               alt="Sarasvathi Nadar"
+               style="display:block; width:100%; height:100%; object-fit:cover; border-radius:10px; pointer-events:none;">
+        </div>
+< <div class=>  <strong> DIGITAL MARKETING PORTFOLIO</div> 
+    <h1 class="hero-name"><br><em>Sarasvathi Nadar</em></h1>
     <p class="hero-title">
       SEO · Organic Growth · B2B Demand Generation · AI-SEO &amp; GEO<br>
       4 years building measurable marketing across B2B SaaS, D2C &amp; E-commerce
